@@ -56,7 +56,7 @@ export default function TaskForm({ onTaskAdded }: TaskFormProps) {
       toast.success("Task created successfully");
     } catch (error) {
       console.error("Error:", error);
-      toast.error("Failed to create task");
+      toast.error("Failed to create task.Check DB");
     }
   };
 
