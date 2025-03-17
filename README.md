@@ -7,7 +7,7 @@ This is a **full-stack CRUD (Create, Read, Update, Delete)** application built u
 ---
 
 
->**Go Live**: [CLICK HERE]()
+>**Go Live**: [CLICK HERE](https://crud-taskmanager.vercel.app/)
 
 
 ### Features :
@@ -97,4 +97,4 @@ This is a **full-stack CRUD (Create, Read, Update, Delete)** application built u
 
 ### Deployment :
 
-  The application is deployed on [Vercel]().
+  The application is deployed on [Vercel](https://crud-taskmanager.vercel.app/).
