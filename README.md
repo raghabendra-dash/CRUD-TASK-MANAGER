@@ -19,7 +19,7 @@ This is a **full-stack CRUD (Create, Read, Update, Delete)** application built u
   - **Update**: Edit task details or mark tasks as complete.
   - **Delete**: Remove tasks from the list.
 
-  ##_Note: User can not edit or delete static fallback data for security. User can only edit or delete his own tasks._##
+  ##_Note: User can not edit or delete static fallback data for security. User can only edit or delete his own tasks after connecting DB._##
 
 
 - **User Interface**:
