@@ -9,7 +9,7 @@ import { ObjectId } from "mongodb";
 const ERROR_MESSAGES = {
   DATABASE_CONNECTION: "Failed to connect to the DB",
   FETCH_TASKS: "Failed to fetch tasks.",
-  CREATE_TASK: "Failed to create task.",
+  CREATE_TASK: "Failed to create task.Check DB",
   UPDATE_TASK: "Failed to update task.",
   EDIT_TASK: "Failed to edit task",
   DELETE_TASK: "Failed to delete task",
@@ -68,7 +68,7 @@ export async function createTask(task: Omit<Task, "_id">) {
     revalidatePath("/");
     return { success: true, message: "Task created successfully", id: result.insertedId.toString() };
   } catch (error) {
-    console.error("Failed to create task:", error);
+    console.error("Failed to create task. DB Error:", error);
     throw new Error(`${ERROR_MESSAGES.CREATE_TASK}: ${error instanceof Error ? error.message : "Unknown error"}`);
   }
 }
